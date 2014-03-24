@@ -13,10 +13,10 @@
 $active_group = 'default';
 $active_record = TRUE;
 
-$db['default']['hostname'] = getenv('FZB_DATABASE_HOSTNAME'); // deleted this (so i can safely push to a public repo). Next time use Heroku Toolbelt.
-$db['default']['username'] = getenv('FZB_DATABASE_USERNAME'); // deleted this (so i can safely push to a public repo). Next time use Heroku Toolbelt.
-$db['default']['password'] = getenv('FZB_DATABASE_PASSWORD'); // deleted this (so i can safely push to a public repo). Next time use Heroku Toolbelt.
-$db['default']['database'] = getenv('FZB_DATABASE_NAME'); // deleted this (so i can safely push to a public repo). Next time use Heroku Toolbelt.
+$db['default']['hostname'] = getenv('FZB_DATABASE_HOSTNAME');
+$db['default']['username'] = getenv('FZB_DATABASE_USERNAME');
+$db['default']['password'] = getenv('FZB_DATABASE_PASSWORD');
+$db['default']['database'] = getenv('FZB_DATABASE_NAME');
 
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
