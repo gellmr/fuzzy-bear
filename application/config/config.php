@@ -1,5 +1,7 @@
 <?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
+  include('/var/www/env.php');
+
 /*
 |--------------------------------------------------------------------------
 | Base Site URL
@@ -16,7 +18,7 @@
 */
 // $config['base_url']	= 'http://localhost/CI_fuzzyBear';
 
-$config['base_url']	= getenv('FZB_BASE_URL');
+$config['base_url']	= $FZB_BASE_URL;
 
 
 
@@ -228,7 +230,7 @@ $config['cache_path'] = '';
 | MUST set an encryption key.  See the user guide for info.
 |
 */
-$config['encryption_key'] = getenv('FZB_ENCRYPTION_KEY');
+$config['encryption_key'] = $FZB_ENCRYPTION_KEY;
 
 /*
 |--------------------------------------------------------------------------

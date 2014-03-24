@@ -13,10 +13,12 @@
 $active_group = 'default';
 $active_record = TRUE;
 
-$db['default']['hostname'] = getenv('FZB_DATABASE_HOSTNAME');
-$db['default']['username'] = getenv('FZB_DATABASE_USERNAME');
-$db['default']['password'] = getenv('FZB_DATABASE_PASSWORD');
-$db['default']['database'] = getenv('FZB_DATABASE_NAME');
+include('/var/www/env.php');
+
+$db['default']['hostname'] = $FZB_DATABASE_HOSTNAME;
+$db['default']['username'] = $FZB_DATABASE_USERNAME;
+$db['default']['password'] = $FZB_DATABASE_PASSWORD;
+$db['default']['database'] = $FZB_DATABASE_NAME;
 
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
