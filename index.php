@@ -1,7 +1,7 @@
 <?php
 
 /*
- (TOUCH 4)
+ (TOUCH 5)
  * To look at the home page go
  * http://localhost/CodeIgniter_2.1.3/index.php/pages/view/home
  *
