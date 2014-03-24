@@ -1,0 +1,45 @@
+
+#login_outer_div
+{
+	width: 620px;
+	height: 250px;
+	/*background-color: rgba(67, 80, 119, 0.02);*/
+}
+
+#login_div
+{
+	margin: auto;
+	position: relative;
+	width: 336px;
+	height: 215px;
+	/*background-color: rgba(67, 80, 119, 0.02);*/
+}
+
+
+#div_uname
+{
+	position: relative;
+	width: 165px;
+	height: 42px;
+	/*background-color: rgba(88, 119, 67, 0.02);*/
+}
+
+#div_password
+{
+	position: relative;
+	left: 167px;
+	top: -42px;
+	width: 159px;
+	height: 42px;
+	/*background-color: rgba(119, 73, 67, 0.02);*/
+}
+
+#login_submit
+{
+	position: absolute;
+	right: 10px;
+	width:80px;
+	height:40px;
+	font-size: 18px;
+	/*background-color: rgba(67, 80, 119, 0.02);*/
+}

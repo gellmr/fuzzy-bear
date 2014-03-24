@@ -1,0 +1,100 @@
+
+
+/*
+Contains style rules SPECIFIC to the cart
+*/
+
+.bottomPad15
+{
+	position: relative;
+	padding-bottom: 15px;
+}
+
+
+#cartTable
+{
+	width: 520px;
+}
+
+#cartTable th > *
+{
+	font-size: 13px;
+	padding-top: 8px;
+	height: 25px;
+}
+
+
+.itemColumn
+{
+	width: 164px;
+}
+
+.qtyColumn
+{
+	width: 94px;
+}
+
+.unitPriceColumn
+{
+	width: 120px;
+}
+
+.subTotColumn
+{
+	width: 120px;
+}
+
+
+.rem_btn
+{
+	width:100px;
+	height:47px;
+	font-size: 10px;
+}
+
+
+.cart_numeric_values
+{
+	position: relative;
+	left:30px;
+}
+
+
+.grandTotalLabel
+{
+	position: relative;
+	top: 20px;
+	left: 293px;
+}
+
+#grandTotalValue
+{
+	position: relative;
+	top:-23px;
+	left:122px;
+	font-size: 20px;
+}
+
+#YourCartHas_NItems
+{
+	
+}
+
+
+.qty_inputClassCART
+{
+	width: 75px;
+	font-size:16px;
+	text-align:center;
+}
+
+
+.cart_qty_Cell
+{
+	padding:10px;
+}
+
+#cart_proceedToCheckout_submit
+{
+	text-align: right;
+}

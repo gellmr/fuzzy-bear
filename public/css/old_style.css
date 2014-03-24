@@ -1,0 +1,802 @@
+	/*
+	ICT211 Michael Gell 30276096
+
+	External Style Specification (CSS)
+	*/
+
+body
+{
+			
+	/* The background image url is relative to the html directory. */
+	
+	/*
+	background: url('../../../images/bground.png'); 
+	*/
+	
+	position: relative;
+	
+	top: 5px;
+
+	background-repeat: no-repeat;
+	
+	background-position: center top;
+	
+	font-family: Tahoma, Geneva, sans-serif;
+	
+	font-size: 1.0em;
+	
+	line-height:1.4;
+	
+	letter-spacing: 0.004em;
+}
+
+.greenText
+{
+			color:#32E92B;
+}
+.redText
+{
+			color:red;
+}
+.orangeText
+{
+			color:orange;
+}
+.blueText
+{
+			font-family: Consolas;
+			color:#4387DD;
+}
+.greyText
+{
+			font-family: Consolas;
+			color:D3D3D3;
+}
+
+.qtyInput
+{
+			padding:10px;
+			font-size: 30px;
+			text-align: center;
+			width: 75px;
+}
+
+.rollover
+{
+	height: 120px;
+	
+	margin: 6px;
+}
+
+
+
+.inCartIcons
+{
+			display: block;
+}
+
+.inCartQtyErr
+{
+			position: relative;
+			
+			top: -80px;
+}
+
+.debugConsoleClass
+{
+	position: absolute;
+
+	top: 0px;
+	
+	font-family: Consolas, serif;
+	
+	font-size: 0.6em;
+	
+	width: 200px;
+	
+	background-color: rgba(243, 229, 218, 0.90);
+}
+
+
+.PersistentContainer_div
+{
+	background-color: rgba(243, 229, 218, 0.19);
+
+	/*background-color: #FF0000;*/
+
+	position: relative;
+	
+	width: 770px;
+	
+	/*height: 420px;*/
+	
+	margin-left:auto;
+	
+	/*
+	margin-right:auto;
+ */
+	top: 0px;
+
+	margin-top: 0px;
+
+	padding: 5px;
+}
+
+
+.companyDeets
+{
+}
+
+.peopleDeets
+{
+
+}
+
+.jobDescr
+{
+	font-size: 1.1em;
+
+	font-weight:bold;
+}
+
+.personName
+{
+	font-size: 1.1em;
+}
+
+table
+{
+	background-color: #FFFFFF;
+
+	font-size: 0.7em;
+	
+	border-width: 2px;
+
+	border-collapse: collapse;
+	
+	text-align:center;
+}
+
+td
+{
+	vertical-align:top;
+}
+
+.ProductNameColumn
+{
+	background-color: rgba(255, 255, 255, 1.0); /* alpha == 1.0 until I can make some png images with alpha */
+	
+	margin-left:auto;
+	
+	margin-right:auto;
+
+	text-align:center;
+}
+
+
+.specTable td
+{
+	height:40px;
+}
+
+.specTable
+{
+	/*
+	background-color: #858585;
+	*/
+	
+	width: 200px;
+
+	font-size: 0.8em;
+	
+	border-width: 2px;
+
+	border-collapse: collapse;
+	
+	text-align:left;
+}
+
+
+
+.alignLeft
+{
+	padding-left:10px;
+	
+	text-align:left;
+}
+
+.alignRight
+{
+	padding-right:10px;
+	
+	text-align:right;
+}
+
+.alignCenter
+{
+	margin-left:auto;
+	
+	margin-right:auto;
+
+	text-align:center;
+}
+
+
+.bigText
+{
+	font-size: 1.5em;
+}
+
+.medsmallText
+{
+	font-size: 0.9em;
+}
+
+.smallText
+{
+	font-size: 0.8em;
+}
+
+
+
+
+.debugPanel
+{
+	background-color: rgba(255, 90, 58, 0.68);
+}
+
+
+
+
+
+
+
+.PersistentHeader_div
+{
+
+	position: relative;
+
+	background-color: rgba(177, 58, 28, 0.13);
+
+	top: 0px;
+
+	/*height: 295px;*/
+
+	width: 760px;
+	
+	margin-left:auto;
+	
+	margin-right:auto;
+	
+	padding: 5px;
+}
+
+.title
+{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+
+	background-color: rgba(177, 58, 28, 0.13);
+	
+	font-weight:bold;
+
+	position: relative;
+	
+	width: 287px;
+	
+	height: 180px;
+	
+	font-size: 3.3em;
+
+	padding-left: 22px;
+}
+
+.LoginPanel_div
+{
+	position: absolute;
+
+	padding-right:10px;
+	
+	padding-top: 6px;
+	
+	text-align:right;
+
+	background-color: rgba(243, 74, 20, 0.24);
+	
+	/*
+	background-color: #2B2BCF;
+	*/
+
+	top: 0px;
+	
+	left: 320px;
+
+	width: 428px;
+	
+	height: 165px;
+
+	/*margin-top: 4px;*/
+
+	font-size: 0.29em;
+	
+	font-weight: normal;
+}
+
+
+.loginText
+{
+			font-size:25px;
+			
+			padding:10px;
+}
+
+
+.accountButton
+{
+			padding: 12px;
+			
+			font-size: 15px;
+}
+
+
+
+.PersistentLinks_div
+{
+	background-color: rgba(131, 105, 39, 0.19);
+	
+	position: relative;
+
+	/*top: 139px;*/
+	
+	/*left: 50px;*/
+
+	/*height: 122px; */
+
+	width: 755px;
+	
+	margin: 5px;
+}
+
+
+/*
+.PersistentLink_class
+{
+	position: relative;
+
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	
+	font-size: 0.8em;
+
+	padding-top:0px;
+
+	padding-left:10px;
+
+	padding-right:15px;
+}
+*/
+
+
+.LoginPanel_buttonInput
+{
+	position: relative;
+
+	font-size: 0.9em;
+
+	top: 3px;
+}
+
+.regoClass
+{
+	position: relative;
+
+	left: 50px;
+}
+
+.HelpPanel_div
+{
+	background-color: rgba(10, 88, 133, 0.25);
+
+	position: relative;
+	
+	height: 32px;
+	
+	top: 0px;
+	
+	padding: 5px;
+}
+
+.ContentPanel_div
+{
+	
+	background-color: rgba(218, 205, 62, 0.35);
+
+	/*background-color: #ffff00;*/
+
+	position: relative;
+	
+	top: 0px; /* -15px; */
+
+	left: 0px;
+
+	width: 750px;
+	
+	margin-left:auto;
+	
+	margin-right:auto;
+
+	margin-top: 5px;
+
+	padding-top:10px;
+	
+	padding-left:10px;
+
+	padding-right:10px;
+
+	padding-bottom:10px;
+}
+
+
+.contentOpaqueBg_div
+{
+	background-color: rgba(255, 255, 255, 0.87);
+	
+	position: relative;
+	
+	margin-top: -5px;
+	
+	/*top: 10px;*/
+	
+	padding:10px;
+}
+
+.cartHeadings
+{
+			text-align: center;
+}
+
+.cartRow
+{
+			text-align: center;
+}
+
+
+#cartFooter
+{
+			background-color: rgba(247, 240, 237, 0.87);
+			
+			position: relative;
+			
+			width: 248px;
+			
+			height: 41px;
+
+			padding:10px;
+			
+			margin-left: auto;
+}
+
+
+.cartFooter_checkoutButton
+{
+			position: absolute;
+			
+			background-color: rgba(39, 231, 22, 0.46);
+			
+			padding:2px;
+			
+			text-align: right;
+			
+			right: 0px;
+			
+			width: 108px;
+			
+			top:1px;
+}
+
+.checkoutButton
+{
+			font-size: 20px;
+			
+			padding:10px;
+}
+
+
+.browsePanelHeader
+{
+
+	background-color: #f0f1e6;
+
+	/*background-color: #00BF00;*/
+	
+	position: relative;
+
+	/*height: 85px;*/
+
+	padding:4px;
+}
+
+.searchPanel
+{
+	position: absolute;
+
+	right: 0px;
+
+	width: 276px;
+	
+	margin-top: 12px;
+	
+	margin-right: 7px;
+	
+	padding: 3px;
+	
+	background-color: rgba(165, 165, 165, 0.05);
+}
+
+.searchFieldClass
+{
+			font-size: 20px;
+			
+			padding: 10px;
+			
+			width: 190px;
+}
+
+.searchButton
+{
+			font-size: 20px;
+			
+			padding: 10px;
+			
+			width: 104px;
+}
+
+.browsePanelBody
+{
+	position: relative;
+
+	top:5px;
+}
+
+
+.browsePanelNavigatorArrows
+{
+	padding:4px;
+
+	width: 300px;
+	
+	margin-right:auto;
+}
+
+.browsePanelNavArrowsTopMargin
+{
+			margin-top: 14px;
+}
+
+
+
+#cart_header_Table
+{
+	font-family: Georgia, serif;
+
+	background-color: #FFFFFF;
+
+	font-size: 0.75em;
+	
+	border-width: 2px;
+
+	border-collapse: collapse;
+
+	text-align:left;
+}
+
+.greyColumns
+{
+			background-color: #CCCCCC;
+}
+
+
+
+.cart_productImageColumn
+{
+			width: 112px;
+}
+.cart_productIdColumn
+{
+			width: 45px;
+}
+.cart_productNameColumn
+{
+			width: 60px;
+}
+.cart_descriptionColumn
+{
+			width: 140px;
+}
+.cart_unitPriceColumn
+{
+			width: 55px;
+}
+.cart_QtyColumn
+{
+			width: 102px;
+}
+.cart_priceTimesQtyColumn
+{
+			width: 100px;
+}
+.cart_removeFromColumn
+{
+			width: 127px;
+}
+
+
+.mini60x60
+{
+    width: 60px;
+    
+    height: 60px;
+}
+
+
+.buttonsInCart
+{
+    padding: 11px;
+}
+
+.cartHeader
+{
+	/*
+	background-color: #00BF00;
+	*/
+
+	background-color: #DBBFAD;
+
+	position: relative;
+
+	height: 27px;
+
+	padding:4px;
+}
+
+#myCartFooter
+{
+	/*
+	background-color: #DDDD00;
+	*/
+
+	position: relative;
+
+	padding:0px;
+	
+	margin: 0px;
+}
+
+
+
+			/**
+			----------------------------------------
+			Column widths for the online store table
+			----------------------------------------
+			*/
+
+.onlineStore_productIdColumn
+{
+			width: 56px;
+}
+.onlineStore_productNameColumn
+{
+			padding-left:10px;
+			text-align:left;
+			width: 155px;
+}
+.onlineStore_unitPriceColumn
+{
+			padding-left:4px;
+			padding-right:4px;
+			text-align:center;
+			width: 75px;
+}
+.onlineStore_qtyInStockColumn
+{
+			width: 102px;
+}
+.onlineStore_descriptionColumn
+{
+			width: 190px;
+}
+.onlineStore_QtyToOrderColumn
+{
+			width: 113px;
+}
+
+
+
+
+
+
+.shipMethodClass
+{
+	font-size: 0.9em;
+
+	background-color: rgba(134, 168, 190, 0.04);
+	
+	position: relative;
+	
+	top: 0px;
+	
+	left: 400px;
+	
+	width: 140px;
+
+	height: 60px;
+	
+	margin-top: 5px;
+	
+	/*margin-bottom: 4px;*/
+	
+	padding: 10px;
+}
+
+.shipMethodRadioBtnsClass
+{
+	font-size: 0.9em;
+
+	position: absolute;
+	
+	left: 40px;
+	
+	padding:5px;
+}
+
+.totalCostPanel_outer_Class
+{
+	font-size: 1.0em;
+	
+	background-color: rgba(134, 168, 190, 0.04);
+	
+	position: absolute;
+	
+	top: 0px;
+	
+	left: 570px;
+	
+	height: 70px;
+	
+	width: 150px;
+
+	text-align:right;
+	
+	margin-top:0px;
+	
+	/*margin-bottom:2px;*/
+	
+	padding:5px;
+}
+
+.totalCostPanel_inner_Class
+{
+
+	/*width: 200px;*/
+
+	/*
+	background-color: #0000DD;
+	*/
+
+	position: relative;
+	
+	
+	/*margin-bottom:2px;*/
+	
+	padding:0px;
+}
+
+.checkoutBtn
+{
+	padding: 11px;
+	
+	text-align:right;
+}
+
+
+
+
+

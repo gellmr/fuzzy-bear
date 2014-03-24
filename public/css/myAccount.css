@@ -1,0 +1,88 @@
+
+#myAccount_submit
+{
+	font-size: 20px;
+	text-align: center;
+}
+
+
+
+.left_aligned_input_fields
+{
+	position: relative;
+	height: 28px;
+	width: 360px;
+	/*background-color: rgb(206, 206, 206);*/
+	top: -17px;
+	left: 20px;
+}
+
+#validationMessage
+{
+	padding-top:10px;
+	padding-bottom:10px;
+}
+
+#validationSuccess
+{
+	background-color: rgb(166, 224, 143);
+}
+
+#userNameValue
+{
+	left: 163px;
+	position: absolute;
+}
+
+.rego_area
+{
+	border-radius: 8px;
+	padding-left: 20px;
+	padding-top: 20px;
+	background-color: rgb(200, 209, 224);
+}
+
+.rego_fields
+{
+	height: 30px;
+	width: 500px;
+	/*background-color: rgb(219, 219, 219);*/
+}
+
+.fieldLabel
+{
+	position: relative;
+	height: 28px;
+	width: 210px;
+	/*background-color: rgb(206, 206, 206);*/
+}
+
+.basic_details_left_align
+{
+	position: relative;
+	left: 140px;
+	top: -19px;
+	height: 28px;
+	width: 260px;
+	/*background-color: rgb(206, 206, 206);*/
+}
+
+.field_input
+{
+	position: relative;
+	left: 180px;
+	top: -19px;
+	height: 28px;
+	width: 260px;
+	/*background-color: rgb(206, 206, 206);*/
+}
+
+#div_shippingAddress
+{
+	height: 310px;
+}
+
+#div_billingAddress
+{
+	height: 310px;
+}

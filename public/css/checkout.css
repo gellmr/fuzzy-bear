@@ -1,0 +1,182 @@
+
+
+/*
+Contains style rules SPECIFIC to the checkout
+*/
+
+/*
+THESE RULES WILL OVERRIDE THE ONES DEFINED FOR THE CART.
+BASICALLY WE WANT TO RENDER THE CART WITHIN THE CHECKOUT PAGE, AT A SMALLER SIZE.
+*/
+
+#wowza_checkout_container_div
+{
+	position: relative;
+	padding-bottom: 15px;
+}
+
+#wowza_cartDiv
+{
+	/*
+	Make the cart appear smaller. Position it on the right of page.
+	*/
+	position: relative;
+	left: 1px;
+	top: 1px;
+	width: 323px;
+	/*background-color: rgb(245, 245, 252); rgb(245, 245, 252);*/
+}
+
+
+#cartTable th > *
+{
+	font-size: 9px;
+	padding-top: 4px;
+	height: 21px;
+}
+
+.cannotCheckout_noCart
+{
+	/*width:300px;*/
+	/*background-color: rgb(245, 245, 252);*/
+}
+
+
+#wowza_checkout_form_div
+{
+	position: absolute;
+	left: 325px;
+	width: 265px;
+	padding-left: 15px;
+	padding-right: 15px;
+	top: 28px;
+	background-color: rgb(157, 168, 187);
+}
+
+#YourCartHas_NProducts
+{
+	position: relative;
+	top: 10px;
+	font-size: 12px;
+}
+
+#grandTotalContainer
+{
+	position: relative;
+	top: 3px;
+	width: 323px;
+	background-color: rgb(193, 204, 228);
+}
+
+
+#grandTotalValue
+{
+	position: relative;
+	top: -23px;
+	left: 198px;
+	font-size: 18px;
+}
+
+
+.rem_btn
+{
+	width:51px;
+	height:47px;
+	font-size: 9px;
+}
+
+.cart_numeric_values
+{
+	font-size: 13px;
+}
+
+.qty_inputClassCART
+{
+	width: 55px;
+	font-size:16px;
+	text-align:center;
+}
+
+
+.qtyColumn
+{
+	width: 30px;
+}
+
+.unitPriceColumn
+{
+	width: 50px;
+}
+
+.subTotColumn
+{
+	width: 60px;
+}
+
+.colheading
+{
+	font-size: 12px;
+	text-align: center;
+	font-weight: normal;
+	height: 28px;
+}
+
+#cartTable img
+{
+	width: 80px;
+	height: 80px;
+}
+
+.checkout_naviation
+{
+	font-size: 10px;
+	position: absolute;
+	height: 35px;
+	top: 2px;
+	padding-left: 3px;
+	padding-right: 9px;
+	
+	
+}
+
+
+.nav_shipping
+{
+	left: 2px;
+}
+
+.nav_payment
+{
+	left: 93px;
+}
+
+.nav_confirm
+{
+	left: 183px;
+	width: 98px;
+}
+
+.offset_addyFields
+{
+	position: absolute;
+	left: 117px;
+}
+
+.confirm_summary_fields_offset
+{
+	position: relative;
+	left: 20px;
+}
+
+.checkout_div_padding
+{
+	padding-left: 10px;
+	padding-top: 3px;
+	padding-bottom: 10px;
+}
+
+
+.wordWrapBreakWord
+{
+	word-wrap:break-word;
+}

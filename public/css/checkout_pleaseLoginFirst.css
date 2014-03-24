@@ -1,0 +1,16 @@
+
+
+
+/**
+Overrides the one defined in checkout.css
+*/
+#wowza_checkout_form_div
+{
+	position: absolute;
+	left: 325px;
+	width: 265px;
+	padding-left: 15px;
+	padding-right: 15px;
+	top: 65px;
+	background-color: rgb(157, 168, 187);
+}

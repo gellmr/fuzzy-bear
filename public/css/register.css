@@ -1,0 +1,161 @@
+
+
+/*
+Contains style rules SPECIFIC to register
+*/
+
+input
+{
+	height: 23px;
+	font-size: 17px;
+}
+
+
+.rego_area
+{
+	padding-left: 20px;
+	padding-top: 20px;
+	background-color: rgb(200, 209, 224);
+	border-radius: 8px;
+}
+
+#registerDiv
+{
+	margin-top: 1px;
+	position: relative;
+	left: 0;
+	width: 620px;
+	/*background-color: rgba(182, 189, 216, 0.34);*/
+}
+
+
+.rego_fields
+{
+	/*margin: 2px;*/
+	/*margin-left: 8px;*/
+	padding: 5px;
+	/*width: 160px;*/
+	/*background-color: rgba(255, 255, 255, 0.34);*/
+}
+
+.rego_prompts
+{
+	margin: 9px;
+}
+
+.checkAvailButton
+{
+	font-size: 12px;
+	width: 110px;
+	height: 30px;
+}
+
+#div_FL_names
+{
+	position: relative;
+	
+	padding-left: 20px;
+	padding-top: 14px;
+}
+
+#div_name_fields
+{
+	/*height: 100px;*/
+	background-color: rgba(33, 33, 33, 0.05);
+}
+
+#div_fname
+{
+	position: relative;
+	height: 38px;
+	width: 210px;
+}
+
+#div_lname
+{
+	position: relative;
+	left: 225px;
+	top: -49px;
+	width: 360px;
+	height: 40px;
+}
+
+.nameInputField
+{
+	height: 96px;
+}
+
+
+#div_uname
+{
+	padding-left: 20px;
+	padding-bottom: 8px;
+	padding-top: 14px;
+}
+
+#div_phoneNumbers
+{
+	padding-left: 20px;
+	padding-bottom: 25px;
+	padding-top: 14px;
+	
+	/*height: 232px;*/
+	/*background-color: rgba(33, 33, 33, 0.05);*/
+}
+
+
+#div_password_cont
+{
+	padding-left: 20px;
+	padding-bottom: 25px;
+	padding-top: 14px;
+}
+
+#div_emailAddr
+{
+	padding-left: 20px;
+	padding-bottom: 30px;
+	padding-top: 14px;
+	height: 121px;
+}
+
+
+#div_streetAddr
+{
+	position: relative;
+	height: 50px;
+}
+
+#div_submit
+{
+	position: relative;
+	height: 60px;
+}
+
+#register_submit
+{
+	width: 175px;
+	height: 40px;
+	font-size: 18px;
+}
+
+
+
+.ajax_report_div
+{
+	position: relative;
+	left: 5px;
+}
+
+.green_available
+{
+	font-weight: bold;
+	color: rgb(90, 163, 96);
+}
+
+.red_unavail
+{
+	color: rgb(196, 54, 54);
+}
+
+

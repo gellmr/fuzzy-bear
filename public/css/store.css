@@ -1,0 +1,318 @@
+
+
+/*
+Contains style rules SPECIFIC to the store
+*/
+
+#no_arrow
+{
+	width: 27px;
+	background-color: rgba(255,0,0, 0); /* red, invisible */
+}
+
+#no_arrow > img
+{
+	display: inline-block;
+	position: relative;
+	top: 1px;
+	width: 17px;
+	height: 13px;
+}
+
+#no_arrow > a > img
+{
+	position: relative;
+	top: -18px;
+	width: 90%;
+	height: 90%;
+}
+
+
+
+
+
+#left_arrow
+{
+	width: 27px;
+}
+
+#left_arrow > img
+{
+	display: inline-block;
+	position: relative;
+	top: 1px;
+	width: 14px;
+	height: 13px;
+}
+
+#left_arrow > a > img
+{
+	position: relative;
+	top: -18px;
+	width: 90%;
+	height: 90%;
+}
+
+
+
+
+#right_arrow
+{
+	width: 27px;
+}
+
+#right_arrow > img
+{
+	display: inline-block;
+	position: relative;
+	top: 1px;
+	width: 14px;
+	height: 13px;
+}
+
+#right_arrow > a > img
+{
+	position: relative;
+	top: -18px;
+	width: 90%;
+	height: 90%;
+}
+
+
+
+
+
+
+#div_searchByKeyword
+{
+	position: relative;
+	width: 200px;
+	height: 30px;
+	left: 350px;
+	top: -37px;
+	/*background-color: rgb(107, 178, 206);*/
+}
+
+#div_search_button
+{
+	position: relative;
+	width: 100px;
+	height: 37px;
+	left: 170px;
+	top: -36px;
+	/*background-color: rgb(107, 178, 206);*/
+}
+
+#input_searchBy_keyword
+{
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 22px;
+	height: 30px;
+}
+
+#search_button
+{
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 22px;
+	width: 100%;
+	height: 100%;
+}
+
+
+
+
+#productsTableDiv
+{
+	position: relative;
+	/*background-color: rgb(107, 178, 206);*/
+}
+
+
+#yourPage
+{
+	font-size: 14px;
+	width: 100px;
+}
+
+#paginationHeader
+{
+	background-color: rgb(156, 199, 228);
+}
+
+
+.paginationDiv
+{
+	position: relative;
+	display: inline-block;
+	padding: 2px;
+	height: 28px;
+	width: 347px;
+	/*background-color: rgb(202, 233, 240);*/
+	background-color: rgb(156, 199, 228);
+}
+
+
+.pagination_links
+{
+	text-align: center;
+	margin-left: 3px;
+	margin-top: 3px;
+	width: 33px;
+	height: 22px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.prodPerPage_links
+{
+	text-align: center;
+	margin: 1px;
+	padding-left: 5px;
+	padding-right: 5px;
+	width: 15px;
+	height: 19px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.pagination_links img
+{
+	position: relative;
+	top: -19px;
+	width: 95%;
+	height: 21px;
+}
+
+
+.prodPerPage_links img
+{
+	position: relative;
+	top: -19px;
+	width: 25px;
+	height: 22px;
+	left: -5px;
+}
+
+#store_productsPerPage
+{
+/*	right: 0px;
+	top: -2px;*/
+
+	position: relative;
+	display: inline-block;
+	
+	height: 28px;
+	width: 222px;
+	
+	/*margin-left: 20px;*/
+	
+	padding: 2px;
+	padding-left:45px;
+	background-color: rgb(156, 199, 228);
+	/*background-color: red;*/
+}
+
+
+
+.onlineStore_ItemNoColumn
+{
+	width: 54px;
+	text-align:center;
+	font-size: 18px;
+}
+.onlineStore_ProductColumn
+{
+	width: 140px;
+	text-align:center;
+}
+.onlineStore_UnitPriceColumn
+{
+	width: 70px;
+	text-align:center;
+	font-size: 18px;
+}
+.onlineStore_QtyInStockColumn
+{
+	width: 65px;
+	text-align:center;
+	font-size: 18px;
+}
+.onlineStore_DescriptionColumn
+{
+	width: 122px;
+}
+
+.onlineStore_QtyToOrderColumn
+{
+	width: 150px;
+}
+
+
+
+.quantity_cell
+{
+	padding: 10px;
+	width: 130px;
+	height: 60px;
+}
+
+.description_cell
+{
+	padding: 4px;
+	font-size: 12px;
+}
+
+
+.img_inCart
+{
+	position: relative;
+	padding-left: 12px;
+	left:60px;
+	top:-45px;
+	width: 60px;
+	height: 60px;
+}
+
+
+.qty_inputClass
+{
+	width: 60px;
+	
+	font-size:20px;
+	/*
+	width:90%;
+	*/
+	text-align:center;
+}
+
+
+.sortBy_buttons
+{
+	color: #000;
+	font-weight: bold;
+	background: #fff;
+	border: 0;
+	width: 100%;
+	height: 32px;
+}
+.sortBy_buttons:hover
+{
+	background: #eee;
+}
+.sortBy_buttons:active
+{
+	background: #bbb;
+}
+
+#store_submit
+{
+	font-size:18px;
+	width:100%;
+}
+
+
+tr.noBorder td
+{
+	/*background-color: rgb(187, 202, 235);*/
+	border: 0;
+}
