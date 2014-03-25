@@ -69,7 +69,7 @@ echo form_open('checkout');
 // );
 ?>
 
-<div class="row" id="storeProducts_placeholder">
+<div id="storeProducts_placeholder">
   <?php
   echo $storeProducts_html;
   ?>
