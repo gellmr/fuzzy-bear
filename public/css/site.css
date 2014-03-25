@@ -7,11 +7,11 @@ Contains style rules which are GENERAL to the whole site.
 
 body
 {
-  top: 0px;
+/*  top: 0px;
   margin:auto;
   width:620px;
   position: relative;
-  font-family: Tahoma, Geneva, sans-serif;
+  font-family: Tahoma, Geneva, sans-serif;*/
 }
 
 table
