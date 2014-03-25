@@ -1307,7 +1307,7 @@ class Store extends MY_Controller
     
     $html .= $this->getPaginationDiv();
     
-    $html .= '<div id="productsTableDiv">';
+    $html .= '<div class="row">';
     
       //----------------------------------------------------------------------
     
