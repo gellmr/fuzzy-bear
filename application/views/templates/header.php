@@ -37,6 +37,13 @@ include_once getcwd() . '/application/libraries/util.php'; // not sure if this i
         echo '<script src="' . base_url() . 'public/js/' . $js_file . '"></script>';
       }
     }
+
+    // bootstrap fonts
+    echo link_tag('public/fonts/glyphicons-halflings-regular.eot');
+    echo link_tag('public/fonts/glyphicons-halflings-regular.svg');
+    echo link_tag('public/fonts/glyphicons-halflings-regular.ttf');
+    echo link_tag('public/fonts/glyphicons-halflings-regular.woff');
+    
     ?>
     <title>Fuzzy Bear Electronics</title>
   </head>

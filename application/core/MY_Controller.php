@@ -380,6 +380,7 @@ class MY_Controller extends CI_Controller
   {
     $jsArray = array(); // javascript files to include in the page header.
     array_push($jsArray, "jquery-1.8.3.min.js");
+    array_push($jsArray, "bootstrap.min.js");
     array_push($jsArray, "siteEventHandlers.js");
     array_push($jsArray, "validationMethods.js");
     array_push($jsArray, "utilityMethods.js");
@@ -394,6 +395,7 @@ class MY_Controller extends CI_Controller
   protected function getDefault_css_Array()
   {
     $cssArray = array();
+    array_push($cssArray, "bootstrap.min.css");
     array_push($cssArray, "site.css");
     return $cssArray;
   }
@@ -840,7 +842,7 @@ class MY_Controller extends CI_Controller
     Reply::setJsonArg("subTot_id_toChange", "#subTot_prod$cartItemId");
     Reply::setJsonArg("updatedCartSummary", $updatedCartSummaryHTML);
     Reply::setJsonArg("cartIsEmpty", $cartEmpty);
-    
+
     echo Reply::value();
   }
   
