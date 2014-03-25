@@ -1009,7 +1009,7 @@ class Store extends MY_Controller
     
       // =================================================================
     
-      $html .= '<div class="col-xs-6">'; // pagination div
+      $html .= '<div class="col-xs-8">'; // pagination div
 
         // -----------------------------------------------------------------
 
@@ -1107,15 +1107,15 @@ class Store extends MY_Controller
 
       // Choose sumber of products per page.
 
-      $css = "btn btn-default prodPerPage_links";
+      $css   = "btn btn-default prodPerPage_links";
 
-      $html .= '<div class="row">';
+      $html .= '<div class="col-xs-4" id="store_productsPerPage">';
 
-      $html .=   '<div class="col-xs-12">Products per page:</div>';
+      $html .=   '<div class="row">';
 
-      $html .=   '<div class="col-xs-6" id="store_productsPerPage">';
+      $html .=     '<div class="col-xs-12">Products per page:</div>';
 
-      $html .=     '<span class="fontSize14">';
+      $html .=       '<span class="fontSize14">';
 
       if ($this->m_productsPerPage == $this->PRODUCTS_PER_PAGE_FEW)
       {
@@ -1141,11 +1141,13 @@ class Store extends MY_Controller
 
         $html .=    ' ' . util::bright_PNG_anchor($this->PRODUCTS_PER_PAGE_MAX, $css);
       }
-      $html .=     '</span>';
+      $html .=       '</span>';
 
-      $html .=   '</div>';
-      
-      $html .= '</div>';
+      $html .=     '</div>'; // col
+
+      $html .=   '</div>'; // row
+
+      $html .= '</div>'; // col
     
       // =================================================================
     
