@@ -1013,9 +1013,11 @@ class Store extends MY_Controller
 
       $html .=   '<div class="row">';
 
+      $html .=     '<div class="col-xs-12">';
+
       // -----------------------------------------------------------------
 
-      $html .=     '<span class="pagination_links" id="yourPage">Page '.$this->m_currentPage.' of '.$this->m_maxPage.': </span>';
+      $html .=       '<span class="pagination_links" id="yourPage">Page '.$this->m_currentPage.' of '.$this->m_maxPage.': </span>';
 
         // -----------------------------------------------------------------
 
@@ -1100,6 +1102,8 @@ class Store extends MY_Controller
         );
 
         // -----------------------------------------------------------------
+
+      $html .=     '</div>';  // col 12
 
       $html .=   '</div>';  // row
 
