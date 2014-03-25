@@ -1308,6 +1308,8 @@ class Store extends MY_Controller
     $html .= $this->getPaginationDiv();
     
     $html .= '<div class="row">';
+
+    $html .=   '<div class="col-xs-12">';
     
     //----------------------------------------------------------------------
   
@@ -1477,10 +1479,12 @@ class Store extends MY_Controller
       return '<table id="onlineStoreTable" border="1">'.$ex->getMessage().'</table>';
     }
 
-    $html .= '</div>';
+    $html .=   '</div>'; // col
+
+    $html .= '</div>';   // row
 
     return $html;
-    
+
   }
   
   
