@@ -36,28 +36,28 @@
 	$div_class = "ribbonLink";
 	$div_id = "storeLink";
 	// echo_ribbon_link("store", "Store", 'title="Online Store"', $page_title, $div_class, $div_id);
-  echo anchor("store", "Store", 'id="storeLink" class="ribbonLink" title="Online Store"');
+  echo anchor("store", "Store", 'id="storeLink" class="ribbonLink btn btn-primary" title="Online Store"');
 	?>
 	
 	<?php
 	$div_class = "ribbonLink";
 	$div_id = "cartLink";
 	// echo_ribbon_link("cart", "My Cart", 'title="My Cart"', $page_title, $div_class, $div_id);
-  echo anchor("cart", "My Cart", 'id="cartLink" class="ribbonLink" title="My Cart"');
+  echo anchor("cart", "My Cart", 'id="cartLink" class="ribbonLink btn btn-primary" title="My Cart"');
 	?>
 
 	<?php
 	$div_class = "ribbonLink";
 	$div_id = "checkoutLink";
 	// echo_ribbon_link("checkout/shippingMethod", "Checkout", 'title="Checkout"', $page_title, $div_class, $div_id);
-  echo anchor("checkout/shippingMethod", "Checkout", 'id="checkoutLink" class="ribbonLink" title="Checkout"');
+  echo anchor("checkout/shippingMethod", "Checkout", 'id="checkoutLink" class="ribbonLink btn btn-primary" title="Checkout"');
 	?>
 
 	<?php
 	$div_class = "ribbonLink";
 	$div_id = "myOrderstLink";
 	// echo_ribbon_link("notImplementedYet", "My Orders", 'title="My Orders"', $page_title, $div_class, $div_id);
-  echo anchor("notImplementedYet", "My Orders", 'id="myOrderstLink" class="ribbonLink" title="My Orders"');
+  echo anchor("notImplementedYet", "My Orders", 'id="myOrderstLink" class="ribbonLink btn btn-primary" title="My Orders"');
 	?>
 	
 
