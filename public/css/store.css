@@ -93,23 +93,6 @@ Contains style rules SPECIFIC to the store
 	/*background-color: rgb(107, 178, 206);*/
 }
 
-#div_search_button
-{
-	position: relative;
-	width: 100px;
-	height: 37px;
-	left: 170px;
-	top: -36px;
-	/*background-color: rgb(107, 178, 206);*/
-}
-
-#input_searchBy_keyword
-{
-	font-family: Arial,Helvetica,sans-serif;
-	font-size: 22px;
-	height: 30px;
-}
-
 #search_button
 {
 	font-family: Arial,Helvetica,sans-serif;

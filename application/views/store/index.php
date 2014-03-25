@@ -27,9 +27,10 @@
 		Total Products: <?php echo $prodCount; ?>
 	</b>
 	
-	<div id="div_searchByKeyword">
+  <div>
+    Search for a Product
+    <br />
     <div class="input-group">
-      Search for a Product<br />
   		<?php // SEARCH BY KEYWORD
   		$fieldName = 'input_searchBy_keyword';
   		$attribs = array
