@@ -35,7 +35,8 @@
 	<?php
 	$div_class = "ribbonLink";
 	$div_id = "storeLink";
-	echo_ribbon_link("store", "Store", 'title="Online Store"', $page_title, $div_class, $div_id);
+	// echo_ribbon_link("store", "Store", 'title="Online Store"', $page_title, $div_class, $div_id);
+  anchor("store", "Store", 'id="storeLink" class="ribbonLink" title="Online Store"');
 	?>
 	
 	<?php
