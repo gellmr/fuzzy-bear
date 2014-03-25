@@ -28,41 +28,37 @@
 	</b>
 	
 	<div id="div_searchByKeyword">
-		<?php
-		//
-		//
-		//
-		// SEARCH BY KEYWORD
-
-		$fieldName = 'input_searchBy_keyword';
-
-		echo 'Search for a Product<br/>';
-
-		$attribs = array
-		(
-			'name'		=> $fieldName,
-			'id'		=> $fieldName,
-			'size'		=> '11',
-			'maxlength'	=> $max_search_string_len,
-			'value'		=> $key_word_value
-		);
-		echo form_input($attribs);
-		//
-		//
-		//
-		?>
-		<div id="div_search_button">
-			<?php
-			// SEARCH BUTTON
-			$attribs = array
-			(
-				'name'		=> 'search_button',
-				'id'		=> 'search_button',
-				'content'	=> 'Search'
-			);
-			echo form_button($attribs);
-			?>
-		</div>
+    <div class="input-group">
+      Search for a Product<br />
+  		<?php // SEARCH BY KEYWORD
+  		$fieldName = 'input_searchBy_keyword';
+  		$attribs = array
+  		(
+  			'name'		  => $fieldName,
+  			'id'		    => $fieldName,
+  			'size'		  => '11',
+  			'maxlength'	=> $max_search_string_len,
+  			'value'		  => $key_word_value,
+        'type'      => "text",
+        'class'     => "form-control"
+  		);
+  		echo form_input($attribs);
+      ?>
+  		
+      <span class="input-group-btn">
+  			<?php // SEARCH BUTTON
+  			$attribs = array
+  			(
+  				'name'		=> 'search_button',
+  				'id'		=> 'search_button',
+  				'content'	=> 'Search',
+          'type'  => 'button'
+          'class' => 'btn btn-default'
+  			);
+  			echo form_button($attribs);
+  			?>
+      </span>
+    </div>
 	</div>
 
 	
