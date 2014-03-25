@@ -120,8 +120,7 @@ include_once getcwd() . '/application/libraries/util.php'; // not sure if this i
               // Link - I forgot my password
               // THIS IS DISPLAYED IF WE ARE LOGGED OUT.
 
-              // $cssClass = "login_panel_button forgot_button";
-              $cssClass = "btn btn-primary";
+              $cssClass = "login_panel_button forgot_button btn btn-primary";
               echo_anchor("forgotPassword", "I forgot my password", 'title="I forgot my password"', $page_title, $cssClass);
             }
             elseif ($value == 'register')
@@ -129,8 +128,7 @@ include_once getcwd() . '/application/libraries/util.php'; // not sure if this i
               // Link - Register
               // THIS IS DISPLAYED IF WE ARE LOGGED OUT.
 
-              // $cssClass = "login_panel_button register_button";
-              $cssClass = "btn btn-primary";
+              $cssClass = "login_panel_button register_button btn btn-primary";
               echo_anchor("register", "Register", 'title="Register"', $page_title, $cssClass);
             }
             elseif ($value == 'login')
@@ -138,8 +136,7 @@ include_once getcwd() . '/application/libraries/util.php'; // not sure if this i
               // Link - Login
               // THIS IS DISPLAYED IF WE ARE LOGGED OUT.
 
-              // $cssClass = "login_panel_button login_button";
-              $cssClass = "btn btn-primary";
+              $cssClass = "login_panel_button login_button btn btn-primary";
               echo echo_anchor("login", "Login", 'title="Login"', $page_title, $cssClass); // allow user to login
               
               // -------------------------------------------------
