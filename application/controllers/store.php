@@ -1025,33 +1025,22 @@ class Store extends MY_Controller
 
         $arrow_id = 'no_arrow';
 
+        $prev_url = '#';
+
         if ($need_prevBtn)
         {
-          // Previous page of pagination links
-
-          $arrow_img = img('/public/images/left_arrow.png');
-
-          $arrow_anchor = anchor(
-
-            'store/pagination/left',
-
-            '...',
-
-            'class="btn btn-primary" title="(more results)"'
-          );
-
+          $prev_url = 'store/pagination/left';
           $arrow_id = 'left_arrow';
         }
+        
+        $html .= anchor(
 
-        $html .= 
+          $prev_url,
 
-        '<div class="linkDark pagination_links" id="'.$arrow_id.'">' .
+          '...',
 
-          $arrow_img .
-
-          $arrow_anchor .
-
-        '</div>';
+          'class="btn btn-primary" title="(more results)"'
+        );
 
         // -----------------------------------------------------------------
 
@@ -1089,34 +1078,24 @@ class Store extends MY_Controller
         $arrow_anchor = '';
 
         $arrow_id = 'no_arrow';
+        $next_url = '#';
 
         if ($need_nextBtn)
         {
-          // Next page of pagination links
-
-          $arrow_img = img('/public/images/right_arrow.png');
-
-          $arrow_anchor = anchor
-          (
-            'store/pagination/right',
-
-            '...',
-
-            'class="btn btn-primary" title="(more results)"'
-          );
-
+          $next_url = 'store/pagination/right';
           $arrow_id = 'right_arrow';
         }
 
-        $html .=
+        // Next page of pagination links
 
-        '<div class="linkDark pagination_links" id="'.$arrow_id.'">' .
+        $html .= anchor(
 
-          $arrow_img .
+          $next_url,
 
-          $arrow_anchor .
+          '...',
 
-        '</div>';
+          'class="btn btn-primary" title="(more results)"'
+        );
 
         // -----------------------------------------------------------------
 
