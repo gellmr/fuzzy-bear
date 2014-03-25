@@ -115,18 +115,6 @@ Contains style rules SPECIFIC to the store
 }
 
 
-.paginationDiv
-{
-	position: relative;
-	display: inline-block;
-	padding: 2px;
-	height: 28px;
-	width: 347px;
-	/*background-color: rgb(202, 233, 240);*/
-	background-color: rgb(156, 199, 228);
-}
-
-
 .pagination_links
 {
 	text-align: center;

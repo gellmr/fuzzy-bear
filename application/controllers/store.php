@@ -1005,11 +1005,11 @@ class Store extends MY_Controller
 		
 		$html = '';
 		
-		$html .= '<div id="paginationHeader">'; // paginationHeader
+		$html .= '<div class="row" id="paginationHeader">'; // paginationHeader
 		
 			// =================================================================
 		
-			$html .= '<div class="paginationDiv">'; // pagination div
+			$html .= '<div class="col-xs-12">'; // pagination div
 
 				// -----------------------------------------------------------------
 
