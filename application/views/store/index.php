@@ -10,9 +10,11 @@
 	<br />
 	
   <div class="row">
-  	<h3>
-  		Online Store
-  	</h3>
+    <div class="col-xs-12">
+    	<h3>
+    		Online Store
+    	</h3>
+    </div>
   </div>
 
   <div class="row">
