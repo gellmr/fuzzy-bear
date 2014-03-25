@@ -156,25 +156,6 @@ Contains style rules SPECIFIC to the store
 	left: -5px;
 }
 
-#store_productsPerPage
-{
-/*	right: 0px;
-	top: -2px;*/
-
-	position: relative;
-	display: inline-block;
-	
-	height: 28px;
-	width: 222px;
-	
-	/*margin-left: 20px;*/
-	
-	padding: 2px;
-	padding-left:45px;
-	background-color: rgb(156, 199, 228);
-	/*background-color: red;*/
-}
-
 
 
 .onlineStore_ItemNoColumn

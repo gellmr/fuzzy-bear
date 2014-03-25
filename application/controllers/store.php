@@ -1134,13 +1134,13 @@ class Store extends MY_Controller
 
 			// Choose sumber of products per page.
 
+      $css = "prodPerPage_links";
+
 			$html .= '<div class="col-xs-4" id="store_productsPerPage">';
 
 			$html .=	'<span class="fontSize14">';
 
 			$html .=		'Products per page: ';
-
-			$css = "prodPerPage_links";
 
 			if ($this->m_productsPerPage == $this->PRODUCTS_PER_PAGE_FEW)
 			{
