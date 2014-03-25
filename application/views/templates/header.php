@@ -191,5 +191,6 @@ include_once getcwd() . '/application/libraries/util.php'; // not sure if this i
       </div>
       
     <?php } ?>
-    
-    <!-- (END HTML_Fragment) View: Store (Header) -->
+
+    <div class="container">
+      <!-- (END HTML_Fragment) View: Store (Header) -->
