@@ -1065,7 +1065,7 @@ class Store extends MY_Controller
           {
             // No anchor. We are already on this page.
 
-            $html .= anchor('#', $p, 'class="btn btn-default pagination_links');
+            $html .= anchor('#', $p, 'class="btn btn-primary pagination_links');
           }
           else
           {
@@ -1077,7 +1077,7 @@ class Store extends MY_Controller
 
               $p,               // text
 
-              'class="btn btn-default pagination_links" title="Page '.$p.'"'  // attribs
+              'class="btn btn-primary pagination_links" title="Page '.$p.'"'  // attribs
             );
           }
         }
