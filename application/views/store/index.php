@@ -15,7 +15,13 @@
 	</h3>
 
   <br />
-  <a class="btn btn-default btn-primary">Hello Link</a>
+  <?php
+  echo anchor(
+    '#',
+    'Hello Link',
+    'class="btn btn-default btn-primary"'
+  );
+  ?>
 	
 	<b id='totProducts'>
 		Total Products: <?php echo $prodCount; ?>
