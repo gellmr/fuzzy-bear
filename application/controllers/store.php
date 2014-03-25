@@ -1309,177 +1309,178 @@ class Store extends MY_Controller
     
     $html .= '<div class="row">';
     
-      //----------------------------------------------------------------------
-    
-      //$html .= form_open('checkout'); // the controller to invoke when the form is submitted.
-    
-      $html .= '<table id="onlineStoreTable" border="1">';
+    //----------------------------------------------------------------------
+  
+    //$html .= form_open('checkout'); // the controller to invoke when the form is submitted.
+  
+    $html .= '<table id="onlineStoreTable" border="1">';
 
-      $html .= $this->getProductTableHeader();
+    $html .= $this->getProductTableHeader();
 
-      try
+    try
+    {
+      
+      
+      if (!isset($this->m_matchingProducts) || is_null($this->m_matchingProducts) || ! $this->m_matchingProducts)
       {
-        
-        
-        if (!isset($this->m_matchingProducts) || is_null($this->m_matchingProducts) || ! $this->m_matchingProducts)
+        throw new Exception("Your search returned no results."); // query result array UNAVAILABLE
+      }
+      
+      
+      if (is_array($this->m_matchingProducts) && count($this->m_matchingProducts) == 0)
+      {
+        throw new Exception("query result array is EMPTY ");
+      }
+      
+      
+      
+      foreach($this->m_matchingProducts as $prod)
+      {
+        // Quantity to Order
+
+        $qty_in_cart = 0;
+
+        if (isset($cart[$prod['ItemNo']]))
         {
-          throw new Exception("Your search returned no results."); // query result array UNAVAILABLE
-        }
-        
-        
-        if (is_array($this->m_matchingProducts) && count($this->m_matchingProducts) == 0)
-        {
-          throw new Exception("query result array is EMPTY ");
-        }
-        
-        
-        
-        foreach($this->m_matchingProducts as $prod)
-        {
-          // Quantity to Order
+          // This item is already in the user's cart.
 
-          $qty_in_cart = 0;
-
-          if (isset($cart[$prod['ItemNo']]))
-          {
-            // This item is already in the user's cart.
-
-            $qty_in_cart = $cart[$prod['ItemNo']]['qty'];
-          }
-
-          $qtyFieldAttribs = array
-          (
-            'name'    => 'quantity',
-            'class'   => 'qty_inputClass',
-            'id'    => 'qty_input_' . $prod['ItemNo'], // eg "qty_input_1" for rainbow wire.
-            'value'   => $qty_in_cart,
-            'maxlength' => $this->MAX_QTY_STRING_LENGTH,
-            'onchange'  => 'updateCartItemQty(this);'
-          );
-
-          $inlineStyle_incartIcon = 'style="display:none;"';
-
-          if ($qty_in_cart > 0)
-          {
-            $inlineStyle_incartIcon = 'style="display:block;"';
-          }
-
-          // "IN CART" image
-
-          $image_properties = array
-          (
-            'src'   => $this->PATH_TO_IMAGES . 'inCart60x60.png',
-            'alt'   => 'This item is in your cart',
-            'width'   => $this->INCART_ICON_WIDTH,
-            'height'  => $this->INCART_ICON_WIDTH
-          );
-
-          $html .=
-          "<tr>" .
-            "<td>" .
-              '<div class="onlineStore_ItemNoColumn">' .
-                $prod['ItemNo'] .
-              '</div>' .
-            "</td>" .
-
-            "<td>" .
-              '<div class="onlineStore_ProductColumn">' .
-                $prod['ProductName'] .
-                "<br />" .
-                img($this->PATH_TO_IMAGES.$this->PRODUCT_THUMBS . $prod['imgURL']) .
-              '</div>' .
-            "</td>" .
-
-            "<td>" .
-              '<div class="onlineStore_UnitPriceColumn">' .
-                "$ " . $prod['UnitPrice'] .
-              '</div>' .
-            "</td>" .
-
-            "<!-- CostFromSupplier was here -->" .
-
-            "<td>" .
-              '<div class="onlineStore_QtyInStockColumn">' .
-                $prod['QuantityInStock'] .
-              '</div>' .
-            "</td>" .
-
-            "<td>" .
-              '<div class="onlineStore_DescriptionColumn">' .
-                '<div class="description_cell">' .
-                  $prod['ProductDescription'] .
-                '</div>' .
-              '</div>' .
-            "</td>" .
-
-            "<td>" .
-
-              '<div class="quantity_cell">' .
-
-                form_label('Quantity:', 'quantity') .
-
-                '<br />' .
-
-                form_input($qtyFieldAttribs) .
-
-                '<div '.$inlineStyle_incartIcon.' id="img_inCart_prod'.$prod['ItemNo'].'" class="img_inCart">' .
-                  img($image_properties) .
-                '</div>' .
-
-              '</div>' .
-
-            '</td>' .
-
-          '</tr>';
+          $qty_in_cart = $cart[$prod['ItemNo']]['qty'];
         }
 
-        // Button to Checkout
-
-        $submitBtnAttribs = array
+        $qtyFieldAttribs = array
         (
-          'name'    => 'submit',
-          'id'    => 'store_submit',
-          'value'   => 'Go to Checkout'
+          'name'    => 'quantity',
+          'class'   => 'qty_inputClass',
+          'id'    => 'qty_input_' . $prod['ItemNo'], // eg "qty_input_1" for rainbow wire.
+          'value'   => $qty_in_cart,
+          'maxlength' => $this->MAX_QTY_STRING_LENGTH,
+          'onchange'  => 'updateCartItemQty(this);'
         );
 
-        $html .=  '<tr class="noBorder">';
+        $inlineStyle_incartIcon = 'style="display:none;"';
 
-        $html .=    "<td></td>";
+        if ($qty_in_cart > 0)
+        {
+          $inlineStyle_incartIcon = 'style="display:block;"';
+        }
 
-        $html .=    "<td></td>";
+        // "IN CART" image
 
-        $html .=    "<td></td>";
+        $image_properties = array
+        (
+          'src'   => $this->PATH_TO_IMAGES . 'inCart60x60.png',
+          'alt'   => 'This item is in your cart',
+          'width'   => $this->INCART_ICON_WIDTH,
+          'height'  => $this->INCART_ICON_WIDTH
+        );
 
-        $html .=    "<td></td>";
+        $html .=
+        "<tr>" .
+          "<td>" .
+            '<div class="onlineStore_ItemNoColumn">' .
+              $prod['ItemNo'] .
+            '</div>' .
+          "</td>" .
 
-        $html .=    "<td></td>";
+          "<td>" .
+            '<div class="onlineStore_ProductColumn">' .
+              $prod['ProductName'] .
+              "<br />" .
+              img($this->PATH_TO_IMAGES.$this->PRODUCT_THUMBS . $prod['imgURL']) .
+            '</div>' .
+          "</td>" .
 
-        $html .=    "<td>";
+          "<td>" .
+            '<div class="onlineStore_UnitPriceColumn">' .
+              "$ " . $prod['UnitPrice'] .
+            '</div>' .
+          "</td>" .
 
-        $html .=      form_submit($submitBtnAttribs);
+          "<!-- CostFromSupplier was here -->" .
 
-        $html .=      '<br />';
+          "<td>" .
+            '<div class="onlineStore_QtyInStockColumn">' .
+              $prod['QuantityInStock'] .
+            '</div>' .
+          "</td>" .
 
-        $html .=      '<br />';
+          "<td>" .
+            '<div class="onlineStore_DescriptionColumn">' .
+              '<div class="description_cell">' .
+                $prod['ProductDescription'] .
+              '</div>' .
+            '</div>' .
+          "</td>" .
 
-        $html .=    "</td>";
+          "<td>" .
 
-        $html .=  '</tr>';
+            '<div class="quantity_cell">' .
 
-        $html .= '</table';
-        
-        //$html .= form_close();
+              form_label('Quantity:', 'quantity') .
+
+              '<br />' .
+
+              form_input($qtyFieldAttribs) .
+
+              '<div '.$inlineStyle_incartIcon.' id="img_inCart_prod'.$prod['ItemNo'].'" class="img_inCart">' .
+                img($image_properties) .
+              '</div>' .
+
+            '</div>' .
+
+          '</td>' .
+
+        '</tr>';
+      }
+
+      // Button to Checkout
+
+      $submitBtnAttribs = array
+      (
+        'name'    => 'submit',
+        'id'    => 'store_submit',
+        'value'   => 'Go to Checkout'
+      );
+
+      $html .=  '<tr class="noBorder">';
+
+      $html .=    "<td></td>";
+
+      $html .=    "<td></td>";
+
+      $html .=    "<td></td>";
+
+      $html .=    "<td></td>";
+
+      $html .=    "<td></td>";
+
+      $html .=    "<td>";
+
+      $html .=      form_submit($submitBtnAttribs);
+
+      $html .=      '<br />';
+
+      $html .=      '<br />';
+
+      $html .=    "</td>";
+
+      $html .=  '</tr>';
+
+      $html .= '</table';
+      
+      //$html .= form_close();
         
       //------------------------------------------------------------------
-      
-      $html .= '</div>';
-
-      return $html;
     }
     catch(Exception $ex)
     {
       return '<table id="onlineStoreTable" border="1">'.$ex->getMessage().'</table>';
     }
+
+    $html .= '</div>';
+
+    return $html;
+    
   }
   
   
