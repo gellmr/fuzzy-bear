@@ -1009,7 +1009,7 @@ class Store extends MY_Controller
     
       // =================================================================
     
-      $html .= '<div class="col-xs-8">'; // pagination div
+      $html .= '<div class="col-xs-6">'; // pagination div
 
         // -----------------------------------------------------------------
 
@@ -1109,7 +1109,7 @@ class Store extends MY_Controller
 
       $css = "btn btn-default prodPerPage_links";
 
-      $html .= '<div class="col-xs-4" id="store_productsPerPage">';
+      $html .= '<div class="col-xs-6" id="store_productsPerPage">';
 
       $html .=  '<span class="fontSize14">';
 
