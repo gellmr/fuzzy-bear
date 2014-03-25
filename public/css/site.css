@@ -7,132 +7,127 @@ Contains style rules which are GENERAL to the whole site.
 
 body
 {
-	top: 0px;
-	margin:auto;
-	width:620px;
-	position: relative;
-	font-family: Tahoma, Geneva, sans-serif;
+  top: 0px;
+  margin:auto;
+  width:620px;
+  position: relative;
+  font-family: Tahoma, Geneva, sans-serif;
 }
 
 table
 {
-	border-collapse:collapse;
-	border: 0px;
+  border-collapse:collapse;
+  border: 0px;
 }
 
 td
 {
-	border: 1px solid gray;
+  border: 1px solid gray;
 }
 
 div
 {
-	border-radius: 4px;
+  border-radius: 4px;
 }
 
 
 .linkBright
 {
-	background-color: rgba(255, 255, 255, 1.0);
+  background-color: rgba(255, 255, 255, 1.0);
 }
 
 .linkDark
 {
-	background-color: rgba(255,255,255,0.7);
+  background-color: rgba(255,255,255,0.7);
 }
 
 .linkFocused
 {
-	background-color: rgba(255, 255, 144, 1);
+  background-color: rgba(255, 255, 144, 1);
 }
 
 #errorSummary
 {
-	padding-bottom: 20px;
-	/*left: 13px;*/
-	position: relative;
+  padding-bottom: 20px;
+  /*left: 13px;*/
+  position: relative;
 }
 
 .friendly_ErrorText
 {
-	font-weight: bold;
-	color: rgb(214, 73, 73);
+  font-weight: bold;
+  color: rgb(214, 73, 73);
 }
 
 #debugPanel
 {
-	/*
-	position: absolute;
-	*/
-	background-color: rgba(255, 228, 228, 0.97);
-	font-size: 10px;
-	white-space: pre;
-	font-family:"Lucida Console", Monaco, monospace;
+  /*
+  position: absolute;
+  */
+  background-color: rgba(255, 228, 228, 0.97);
+  font-size: 10px;
+  white-space: pre;
+  font-family:"Lucida Console", Monaco, monospace;
 }
 
 
 
 .ribbonLink img
 {
-	/*The clickable img anchors along the NAVIGATION RIBBON. Normally they are a transparent png.*/
-	
-	position: absolute;
-	top: 2px;
-	left: 2px;
-	width: 147px;
-	height: 26px;
-	/*background-color: red;*/
+  /*The clickable img anchors along the NAVIGATION RIBBON. Normally they are a transparent png.*/
+  
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 147px;
+  height: 26px;
+  /*background-color: red;*/
 }
 
 
 #myOrderstLink
 {
-	width: 133.5px;
+  width: 133.5px;
 }
 
 .ribbonLink
 {
-	position: relative;
-	width: 132px;
-	
-	display: inline-block; /* Allows the divs to flow from left to right across the page. (Like a span) */
-	text-align: center;
-	
-	font-size: 18px;
-	
-	height:28px;
-	
-	padding-left:10px;
-	padding-right:10px;
-	padding-top: 3px;
+  position: relative;
+  width: 132px;
+  
+  display: inline-block; /* Allows the divs to flow from left to right across the page. (Like a span) */
+  text-align: center;
+  
+  padding-left:10px;
+  padding-right:10px;
+  padding-top: 3px;
 
-	
-	margin:1px;
-	margin-left: -3px;
-	margin-right: 0px;
-	
-	/*background-color: rgba(33, 33, 33, 0.05);*/
+  margin:1px;
+  margin-left: -3px;
+  margin-right: 0px;
+  
+  /*background-color: rgba(33, 33, 33, 0.05);*/
 }
 
 
 .small_Text
 {
-	font-size: 0.7em;
+  font-size: 0.7em;
 }
 
 
 .greyText
 {
-	color: rgba(32, 32, 32, 0.49);
+  color: rgba(32, 32, 32, 0.49);
 }
 
 
 
 .colheading
 {
-	text-align:center;
-	font-weight:bold;
-	height:32px;
+  text-align:center;
+  font-weight:bold;
+  height:32px;
 }
 
 
@@ -140,108 +135,108 @@ div
 
 .fontSize10
 {
-	font-size:10px;
+  font-size:10px;
 }
 .fontSize12
 {
-	font-size:12px;
+  font-size:12px;
 }
 .fontSize14
 {
-	font-size:14px;
+  font-size:14px;
 }
 .fontSize16
 {
-	font-size:16px;
+  font-size:16px;
 }
 .fontSize20
 {
-	font-size:20px;
+  font-size:20px;
 }
 
 
 
 #login_panel_div
 {
-	position: absolute;
-	width: 212px;
-	height: 56px;
-	background-color: rgba(33, 33, 33, 0.05);
-	left: 408px;
-	top: 0px;
+  position: absolute;
+  width: 212px;
+  height: 56px;
+  background-color: rgba(33, 33, 33, 0.05);
+  left: 408px;
+  top: 0px;
 }
 
 #loginStatus
 {
-	/*height: 15px;*/
+  /*height: 15px;*/
 }
 
 
 #login_panel_all_buttons
 {
-	position: relative;
-	height: 42px;
-	background-color: rgba(191, 216, 216, 1);
+  position: relative;
+  height: 42px;
+  background-color: rgba(191, 216, 216, 1);
 }
 
 .login_panel_button
 {
-	position: absolute;
-	margin: 2px;
-	padding: 4px;
-	/*background-color: rgba(255, 255, 255, 0.95);*/
-	height: 30px;
-	top: 0px;
-	text-align: center;
-	padding-top: 8px;
-	padding-bottom: 0px;
+  position: absolute;
+  margin: 2px;
+  padding: 4px;
+  /*background-color: rgba(255, 255, 255, 0.95);*/
+  height: 30px;
+  top: 0px;
+  text-align: center;
+  padding-top: 8px;
+  padding-bottom: 0px;
 }
 
 .login_panel_button img
 {
-	/*The clickable img anchors. Normally they are a transparent png.*/
-	
-	position: absolute;
-	top: 2px;
-	left: 2px;
-	width: 95%;
-	height: 94%;
+  /*The clickable img anchors. Normally they are a transparent png.*/
+  
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 95%;
+  height: 94%;
 
-	/*background-color: red;*/
+  /*background-color: red;*/
 }
 
 .forgot_button
 {
-	width: 70px;
-	left: 0px;
-	font-size: 0.75em;
-	padding-top: 4px;
-	padding-bottom: 4px;
+  width: 70px;
+  left: 0px;
+  font-size: 0.75em;
+  padding-top: 4px;
+  padding-bottom: 4px;
 }
 
 .register_button
 {
-	width: 60px;
-	left: 80px;
+  width: 60px;
+  left: 80px;
 }
 
 .login_button
 {
-	width: 50px;
-	left: 150px;
+  width: 50px;
+  left: 150px;
 }
 
 #myAccount_button
 {
-	width: 140px;
+  width: 140px;
 }
 
 
 
 #disclaimer
 {
-	font-size: 0.8em;
-	width: 404px;
-	/*background-color: red;*/
-	padding-bottom: 9px;
+  font-size: 0.8em;
+  width: 404px;
+  /*background-color: red;*/
+  padding-bottom: 9px;
 }
