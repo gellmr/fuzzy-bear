@@ -1114,7 +1114,7 @@ class Store extends MY_Controller
       $html .=   '<div class="row">';
 
       $html .=     '<div class="col-xs-12">';
-      $html .=       'Products per page:</div>';
+      $html .=       'Products per page:';
       $html .=     '</div>';
 
       $html .=     '<div class="col-xs-12">';
