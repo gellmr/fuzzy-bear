@@ -156,28 +156,11 @@ div
 
 
 
-#login_panel_div
-{
-  position: absolute;
-  width: 212px;
-  height: 56px;
-  background-color: rgba(33, 33, 33, 0.05);
-  left: 408px;
-  top: 0px;
-}
-
 #loginStatus
 {
   /*height: 15px;*/
 }
 
-
-#login_panel_all_buttons
-{
-  position: relative;
-  height: 42px;
-  background-color: rgba(191, 216, 216, 1);
-}
 
 .login_panel_button
 {
