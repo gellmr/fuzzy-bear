@@ -2,7 +2,7 @@
 <!-- ==================================== -->
 <!-- (HTML_Fragment) View: Store (Ribbon) -->
 
-<div id="ribbon">
+<div class="row">
 	
 	<?php
 	

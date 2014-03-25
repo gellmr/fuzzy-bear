@@ -71,24 +71,6 @@ div
 }
 
 
-#ribbon
-{
-	top: 0px;
-	
-	position: relative;
-	
-	height:33px;
-	
-	padding: 1px;
-	
-	padding-left: 6px;
-
-	padding-right: 0px;
-	
-	background-color: rgba(191, 216, 216, 1); /*rgba(33, 33, 33, 0.05);*/
-}
-
-
 
 .ribbonLink img
 {
