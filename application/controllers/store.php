@@ -1005,7 +1005,7 @@ class Store extends MY_Controller
 		
 		$html = '';
 		
-		$html .= '<div class="row" id="paginationHeader">'; // paginationHeader
+		$html .= '<div class="row">'; // paginationHeader
 		
 			// =================================================================
 		

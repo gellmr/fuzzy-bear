@@ -109,12 +109,6 @@ Contains style rules SPECIFIC to the store
 	width: 100px;
 }
 
-#paginationHeader
-{
-	background-color: rgb(156, 199, 228);
-}
-
-
 .pagination_links
 {
 	text-align: center;
