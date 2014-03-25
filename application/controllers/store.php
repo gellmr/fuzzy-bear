@@ -1113,7 +1113,11 @@ class Store extends MY_Controller
 
       $html .=   '<div class="row">';
 
-      $html .=     '<div class="col-xs-12">Products per page:</div>';
+      $html .=     '<div class="col-xs-12">';
+      $html .=       'Products per page:</div>';
+      $html .=     '</div>';
+
+      $html .=     '<div class="col-xs-12">';
 
       $html .=       '<span class="fontSize14">';
 
@@ -1143,11 +1147,11 @@ class Store extends MY_Controller
       }
       $html .=       '</span>';
 
-      $html .=     '</div>'; // col
+      $html .=     '</div>'; // col 12
 
       $html .=   '</div>'; // row
 
-      $html .= '</div>'; // col
+      $html .= '</div>'; // col 4
     
       // =================================================================
     
