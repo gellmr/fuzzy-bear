@@ -13,6 +13,9 @@
 	<h3>
 		Online Store
 	</h3>
+
+  <br />
+  <a class="btn btn-default btn-primary">Hello Link</a>
 	
 	<b id='totProducts'>
 		Total Products: <?php echo $prodCount; ?>
