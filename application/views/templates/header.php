@@ -43,7 +43,7 @@ include_once getcwd() . '/application/libraries/util.php'; // not sure if this i
     echo link_tag('public/fonts/glyphicons-halflings-regular.svg');
     echo link_tag('public/fonts/glyphicons-halflings-regular.ttf');
     echo link_tag('public/fonts/glyphicons-halflings-regular.woff');
-    
+
     ?>
     <title>Fuzzy Bear Electronics</title>
   </head>
@@ -85,17 +85,19 @@ include_once getcwd() . '/application/libraries/util.php'; // not sure if this i
         
         <?php
         
-        function echo_anchor($controller, $title, $attribs, $current_page, $css_class, $divId='')
+        // TODO: remove all controller logic from templates.
+
+        function echo_anchor($controller, $text, $attribs, $current_page, $css_class, $divId='')
         {
-          if ($current_page == $title)
+          if ($current_page == $text)
           {
             // No anchor. Already on this page.
-            echo util::bright_PNG_anchor($title, $css_class, $divId);
+            echo util::bright_PNG_anchor($text, $css_class, $divId);
           }
           else
           {
             // Yes anchor. We are not on this page.
-            echo util::dark_PNG_anchor($controller, $title, $attribs, $css_class, $divId);
+            echo util::dark_PNG_anchor($controller, $text, $attribs, $css_class, $divId);
           }
         }
         
@@ -115,41 +117,26 @@ include_once getcwd() . '/application/libraries/util.php'; // not sure if this i
             
             if ($value == 'forgot_pw')
             {
-              
-              /**
-               * Link - I forgot my password
-               * 
-               * THIS IS DISPLAYED IF WE ARE LOGGED OUT.
-               */
-              
-              $cssClass = "login_panel_button forgot_button";
-              
+              // Link - I forgot my password
+              // THIS IS DISPLAYED IF WE ARE LOGGED OUT.
+
+              $cssClass = "login_panel_button forgot_button btn btn-primary";
               echo_anchor("forgotPassword", "I forgot my password", 'title="I forgot my password"', $page_title, $cssClass);
-              
             }
             elseif ($value == 'register')
             {
-              /**
-               * Link - Register
-               * 
-               * THIS IS DISPLAYED IF WE ARE LOGGED OUT.
-               */
-              
-              $cssClass = "login_panel_button register_button";
-              
+              // Link - Register
+              // THIS IS DISPLAYED IF WE ARE LOGGED OUT.
+
+              $cssClass = "login_panel_button register_button btn btn-primary";
               echo_anchor("register", "Register", 'title="Register"', $page_title, $cssClass);
-              
             }
             elseif ($value == 'login')
             {
-              /**
-               * Link - Login
-               * 
-               * THIS IS DISPLAYED IF WE ARE LOGGED OUT.
-               */
-              
-              $cssClass = "login_panel_button login_button";
-              
+              // Link - Login
+              // THIS IS DISPLAYED IF WE ARE LOGGED OUT.
+
+              $cssClass = "login_panel_button login_button btn btn-primary";
               echo echo_anchor("login", "Login", 'title="Login"', $page_title, $cssClass); // allow user to login
               
               // -------------------------------------------------
@@ -160,29 +147,19 @@ include_once getcwd() . '/application/libraries/util.php'; // not sure if this i
             }
             elseif ($value == 'my_account')
             {
-              /**
-               * Link - My Account
-               * 
-               * ONLY DISPLAYED IF WE ARE LOGGED IN.
-               */
-              
+              // Link - My Account
+              // ONLY DISPLAYED IF WE ARE LOGGED IN.
+
               $div_id = "myAccount_button";
-              
               $cssClass = "login_panel_button";
-              
               echo echo_anchor("myAccount", "My Account", 'title="My Account"', $page_title, $cssClass, $div_id);
-              
             }
             elseif ($value == 'logout')
             {
-              /**
-               * Link - Logout
-               * 
-               * ONLY DISPLAYED IF WE ARE LOGGED IN.
-               */
-              
+              // Link - Logout
+              // ONLY DISPLAYED IF WE ARE LOGGED IN.
+
               $cssClass = "login_panel_button login_button";
-              
               echo echo_anchor("logout", "Logout", 'title="Logout"', $page_title, $cssClass); // allow user to logout
               
               // -------------------------------------------------
@@ -197,7 +174,6 @@ include_once getcwd() . '/application/libraries/util.php'; // not sure if this i
           
       </div>
     </div>
-    
     
     <?php if($showDebug && $globalShowDebug) { ?>
       
