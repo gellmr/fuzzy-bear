@@ -52,7 +52,7 @@
   				'name'		=> 'search_button',
   				'id'		=> 'search_button',
   				'content'	=> 'Search',
-          'type'  => 'button'
+          'type'  => 'button',
           'class' => 'btn btn-default'
   			);
   			echo form_button($attribs);
