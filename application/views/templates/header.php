@@ -54,7 +54,7 @@ include_once getcwd() . '/application/libraries/util.php'; // not sure if this i
 
       <div class="row">
       
-        <div class="col-xs-8">
+        <div class="col-xs-4">
           <div class="row">
             <div class="col-xs-12">
               <h3>Fuzzy Bear Electronics</h3>
@@ -67,9 +67,9 @@ include_once getcwd() . '/application/libraries/util.php'; // not sure if this i
               </div>
             </div>
           </div>
-        </div> <!-- col 8 -->
+        </div> <!-- col 4 -->
 
-        <div class="col-xs-4">
+        <div class="col-xs-8">
           <div class="row" id="loginStatus" class="small_Text">
             <div class="col-xs-12">
               <?php
@@ -168,7 +168,7 @@ include_once getcwd() . '/application/libraries/util.php'; // not sure if this i
               ?>
             </div> <!-- col 12 -->
           </div> <!-- row -->
-        </div> <!-- col 4 -->
+        </div> <!-- col 8 -->
         
         <?php
         if($showDebug && $globalShowDebug) {
