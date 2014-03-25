@@ -1109,11 +1109,13 @@ class Store extends MY_Controller
 
       $css = "btn btn-default prodPerPage_links";
 
-      $html .= '<div class="col-xs-12">Products per page:</div>';
+      $html .= '<div class="row">';
 
-      $html .= '<div class="col-xs-6" id="store_productsPerPage">';
+      $html .=   '<div class="col-xs-12">Products per page:</div>';
 
-      $html .=  '<span class="fontSize14">';
+      $html .=   '<div class="col-xs-6" id="store_productsPerPage">';
+
+      $html .=     '<span class="fontSize14">';
 
       if ($this->m_productsPerPage == $this->PRODUCTS_PER_PAGE_FEW)
       {
@@ -1139,8 +1141,10 @@ class Store extends MY_Controller
 
         $html .=    ' ' . util::bright_PNG_anchor($this->PRODUCTS_PER_PAGE_MAX, $css);
       }
-      $html .=  '</span>';
+      $html .=     '</span>';
 
+      $html .=   '</div>';
+      
       $html .= '</div>';
     
       // =================================================================
