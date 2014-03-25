@@ -1035,7 +1035,7 @@ class Store extends MY_Controller
 
             'store/pagination/left',
 
-            img(util::get_hiddenPNG_forAnchor()),
+            '...',
 
             'class="btn btn-primary" title="(more results)"'
           );
@@ -1100,7 +1100,7 @@ class Store extends MY_Controller
           (
             'store/pagination/right',
 
-            img(util::get_hiddenPNG_forAnchor()),
+            '...',
 
             'class="btn btn-primary" title="(more results)"'
           );
