@@ -115,38 +115,32 @@ include_once getcwd() . '/application/libraries/util.php'; // not sure if this i
                   if ($value == 'forgot_pw') {
                     // Link - I forgot my password
                     // THIS IS DISPLAYED IF WE ARE LOGGED OUT.
-                    $cssClass = "login_panel_button forgot_button btn btn-primary";
-                    echo_anchor("forgotPassword", "I forgot my password", 'class="btn btn-primary" title="I forgot my password"', $page_title, $cssClass);
+                    echo anchor("forgotPassword", "I forgot my password", 'class="btn btn-primary forgot_button" title="I forgot my password"');
                   }
                   elseif ($value == 'register')
                   {
                     // Link - Register
                     // THIS IS DISPLAYED IF WE ARE LOGGED OUT.
-                    $cssClass = "login_panel_button register_button btn btn-primary";
-                    echo_anchor("register", "Register", 'class="btn btn-primary" title="Register"', $page_title, $cssClass);
+                    echo anchor("register", "Register", 'class="btn btn-primary register_button" title="Register"');
                   }
                   elseif ($value == 'login')
                   {
                     // Link - Login
                     // THIS IS DISPLAYED IF WE ARE LOGGED OUT.
-                    $cssClass = "login_panel_button login_button btn btn-primary";
-                    echo echo_anchor("login", "Login", 'class="btn btn-primary" title="Login"', $page_title, $cssClass); // allow user to login
+                    echo anchor("login", "Login", 'class="btn btn-primary login_button" title="Login"'); // allow user to login
                     // -------------------------------------------------
                   }
                   elseif ($value == 'my_account')
                   {
                     // Link - My Account
                     // ONLY DISPLAYED IF WE ARE LOGGED IN.
-                    $div_id = "myAccount_button";
-                    $cssClass = "login_panel_button";
-                    echo echo_anchor("myAccount", "My Account", 'class="btn btn-primary" title="My Account"', $page_title, $cssClass, $div_id);
+                    echo anchor("myAccount", "My Account", 'id="myAccount_button" class="btn btn-primary" title="My Account"');
                   }
                   elseif ($value == 'logout')
                   {
                     // Link - Logout
                     // ONLY DISPLAYED IF WE ARE LOGGED IN.
-                    $cssClass = "login_panel_button login_button";
-                    echo echo_anchor("logout", "Logout", 'class="btn btn-primary" title="Logout"', $page_title, $cssClass); // allow user to logout
+                    echo anchor("logout", "Logout", 'class="btn btn-primary login_button" title="Logout"'); // allow user to logout
                     // -------------------------------------------------
                   }
                 }
