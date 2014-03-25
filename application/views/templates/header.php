@@ -115,32 +115,52 @@ include_once getcwd() . '/application/libraries/util.php'; // not sure if this i
                   if ($value == 'forgot_pw') {
                     // Link - I forgot my password
                     // THIS IS DISPLAYED IF WE ARE LOGGED OUT.
-                    echo anchor("forgotPassword", "I forgot my password", 'class="btn btn-primary forgot_button" title="I forgot my password"');
+                    echo anchor(
+                      "forgotPassword",
+                      "I forgot my password",
+                      'class="btn btn-primary forgot_button" title="I forgot my password"'
+                    );
                   }
                   elseif ($value == 'register')
                   {
                     // Link - Register
                     // THIS IS DISPLAYED IF WE ARE LOGGED OUT.
-                    echo anchor("register", "Register", 'class="btn btn-primary register_button" title="Register"');
+                    echo anchor(
+                      "register",
+                      "Register",
+                      'class="btn btn-primary register_button" title="Register"'
+                    );
                   }
                   elseif ($value == 'login')
                   {
                     // Link - Login
                     // THIS IS DISPLAYED IF WE ARE LOGGED OUT.
-                    echo anchor("login", "Login", 'class="btn btn-primary login_button" title="Login"'); // allow user to login
+                    echo anchor(
+                      "login",
+                      "Login",
+                      'class="btn btn-primary login_button" title="Login"'
+                    );
                     // -------------------------------------------------
                   }
                   elseif ($value == 'my_account')
                   {
                     // Link - My Account
                     // ONLY DISPLAYED IF WE ARE LOGGED IN.
-                    echo anchor("myAccount", "My Account", 'id="myAccount_button" class="btn btn-primary" title="My Account"');
+                    echo anchor(
+                      "myAccount",
+                      "My Account",
+                      'id="myAccount_button" class="btn btn-primary" title="My Account"'
+                    );
                   }
                   elseif ($value == 'logout')
                   {
                     // Link - Logout
                     // ONLY DISPLAYED IF WE ARE LOGGED IN.
-                    echo anchor("logout", "Logout", 'class="btn btn-primary login_button" title="Logout"'); // allow user to logout
+                    echo anchor(
+                      "logout",
+                      "Logout",
+                      'class="btn btn-primary login_button" title="Logout"'
+                    );
                     // -------------------------------------------------
                   }
                 }

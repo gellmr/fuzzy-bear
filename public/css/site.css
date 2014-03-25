@@ -174,27 +174,6 @@ div
   /*background-color: red;*/
 }
 
-.forgot_button
-{
-  width: 70px;
-  left: 0px;
-  font-size: 0.75em;
-  padding-top: 4px;
-  padding-bottom: 4px;
-}
-
-.register_button
-{
-  width: 60px;
-  left: 80px;
-}
-
-.login_button
-{
-  width: 50px;
-  left: 150px;
-}
-
 #myAccount_button
 {
   width: 140px;
