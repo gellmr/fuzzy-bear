@@ -122,14 +122,14 @@ Contains style rules SPECIFIC to the store
 
 .prodPerPage_links
 {
-	text-align: center;
+/*	text-align: center;
 	margin: 1px;
 	padding-left: 5px;
 	padding-right: 5px;
 	width: 15px;
 	height: 19px;
 	display: inline-block;
-	vertical-align: middle;
+	vertical-align: middle;*/
 }
 
 .pagination_links img
