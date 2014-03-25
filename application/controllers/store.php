@@ -1035,17 +1035,15 @@ class Store extends MY_Controller
 
             'store/pagination/left',
 
-            //img('/public/images/paginationGREEN.png'),
-
             img(util::get_hiddenPNG_forAnchor()),
 
-            'title="(more results)"'
+            'class="btn btn-primary" title="(more results)"'
           );
 
           $arrow_id = 'left_arrow';
         }
 
-        $html .=
+        $html .= 
 
         '<div class="linkDark pagination_links" id="'.$arrow_id.'">' .
 
@@ -1102,11 +1100,9 @@ class Store extends MY_Controller
           (
             'store/pagination/right',
 
-            //img('/public/images/paginationGREEN.png'),
-
             img(util::get_hiddenPNG_forAnchor()),
 
-            'title="(more results)"'
+            'class="btn btn-primary" title="(more results)"'
           );
 
           $arrow_id = 'right_arrow';
