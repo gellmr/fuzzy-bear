@@ -1009,7 +1009,7 @@ class Store extends MY_Controller
 		
 			// =================================================================
 		
-			$html .= '<div class="col-xs-12">'; // pagination div
+			$html .= '<div class="col-xs-8">'; // pagination div
 
 				// -----------------------------------------------------------------
 
@@ -1134,7 +1134,7 @@ class Store extends MY_Controller
 
 			// Choose sumber of products per page.
 
-			$html .= '<div id="store_productsPerPage">';
+			$html .= '<div class="col-xs-4" id="store_productsPerPage">';
 
 			$html .=	'<span class="fontSize14">';
 
